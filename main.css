@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+}
+p{
+    color:blue;
+}
+
+p::after{
+display:block;
+content:"IAN";
+background-color:green ;
+color:#FFFFFF;
+
+
+}
+body{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right:50px;
+    margin-bottom:100px;
+    width:80%;
+    height:50%;
+    text-align: center;
+}
+p::before{
+    display:block;
+    content:"IND";
+    background-color: orange;
+    color:white;
+}
+
+
+@media(min-width:768px)
+{
+    v{
+        display:flex;
+
+        gap : 25px;
+        
+    }
+  body{ width:80%;}}
+   
+
+@media(max-width:400px)
+{
+    v{
+        display:flex;
+        flex-wrap:wrap;
+        gap:20px;
+        
+    }
+    video{
+        width:100%;
+    }
+   img{width:100%;}
+}
